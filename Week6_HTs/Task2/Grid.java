@@ -1,0 +1,12 @@
+package Week6_HTs.Task2;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Grid {
+    private Set<String> obstacles = new HashSet<>();
+
+    public void addObstacle(int x, int y) { obstacles.add(x + ":" + y); }
+
+    public boolean isObstacle(int x, int y) { return obstacles.contains(x + ":" + y); }
+}
